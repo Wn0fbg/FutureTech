@@ -1,0 +1,23 @@
+{
+  "name": "futuretech",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Wn0fbg/FutureTech#readme",
+  "bugs": {
+    "url": "https://github.com/Wn0fbg/FutureTech/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wn0fbg/FutureTech.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "sass": "^1.94.2"
+  }
+}
