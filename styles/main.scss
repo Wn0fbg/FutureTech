@@ -3,3 +3,10 @@
 @use "variables";
 @use "utils";
 @use "globals";
+
+body {
+  background-color: darkblue;
+  p {
+    color: red;
+  }
+}
