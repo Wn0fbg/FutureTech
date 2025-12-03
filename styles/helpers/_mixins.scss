@@ -1,4 +1,3 @@
-@use "sass-math";
 @use "functions" as *;
 
 @mixin fluid-text($max: 48, $min: 16) {
