@@ -20,15 +20,15 @@
   --font-family-base: "Inter", sans-serif;
   --font-family-accent: "Kumbh Sans", sans-serif;
 
-    // Ширина контейнера
+  // Ширина контейнера
   --container-width: #{rem(1600)};
 
   // Внутренние горизонтальные отступы контейнера (мобильная версия)
-  --container--padding-x: #r{rem(16)};
+  --container-padding-x: #{rem(16)};
 
   --transition-duration: 0.2s;
 
-    @include laptop {
-      --container-width: #{rem(1280)};
+  @include laptop {
+    --container-width: #{rem(1280)};
   }
 }
