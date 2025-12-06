@@ -17,7 +17,7 @@ $mobile-s: 480.98;
   }
 }
 
-@mixin tabler-above {
+@mixin tablet-above {
   @media (width > rem($tabler)) {
     @content;
   }
