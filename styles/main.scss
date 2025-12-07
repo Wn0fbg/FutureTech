@@ -12,7 +12,13 @@
 @use "blocks/badge";
 @use "blocks/socials";
 @use "blocks/footer";
+@use "blocks/adventage-card";
+@use "blocks/team";
+@use "blocks/metrics";
+@use "blocks/hero";
+@use "blocks/resourses-preview";
 
-.header {
+.header,
+.footer {
   display: none !important;
 }
