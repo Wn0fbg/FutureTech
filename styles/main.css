@@ -1071,7 +1071,8 @@ button[aria-label]::before {
 }
 
 .header,
-.footer {
+.footer,
+.hero {
   display: none !important;
 }
 
