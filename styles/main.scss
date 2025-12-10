@@ -17,9 +17,14 @@
 @use "blocks/metrics";
 @use "blocks/hero";
 @use "blocks/resourses-preview";
+@use "blocks/card";
+@use "blocks/list";
+@use "blocks/tag";
+@use "blocks/section";
+@use "blocks/tile";
 
 .header,
-.footer,
-.hero {
+main > *:not(:last-child),
+.footer {
   display: none !important;
 }
