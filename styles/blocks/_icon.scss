@@ -25,4 +25,10 @@
       background-image: url("../../assets/icons/arrow-top-right.svg");
     }
   }
+
+  &--yellow-eye {
+    &::after {
+      background-image: url("../../assets/icons/eye__yellow.svg");
+    }
+  }
 }
