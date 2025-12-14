@@ -1176,7 +1176,11 @@
         </header>
         <div class="section__body">
           <ul class="bordered-grid bordered-grid--3-cols container">
-            <li class="bordered-grid__item">
+            <li class="bordered-grid__item">        &:nth-child(even) {
+          @include full-vw-centered-line(bottom, auto, 100%, 50%);
+
+          padding-left: var(--itemPaddingX);
+        }
               <div class="review-card">
                 <div class="review-card__author person-card">
                   <img
@@ -1193,7 +1197,7 @@
                   </div>
                 </div>
                 <div
-                  class="review-card__body"
+                  class="review-card__body tile"
                   aria-label="Rating 5 star"
                   title="Rating 5 star"
                 >
@@ -1232,7 +1236,7 @@
                   </div>
                 </div>
                 <div
-                  class="review-card__body"
+                  class="review-card__body tile"
                   aria-label="Rating 5 star"
                   title="Rating 5 star"
                 >
@@ -1271,7 +1275,7 @@
                   </div>
                 </div>
                 <div
-                  class="review-card__body"
+                  class="review-card__body tile"
                   aria-label="Rating 5 star"
                   title="Rating 5 star"
                 >
@@ -1310,7 +1314,7 @@
                   </div>
                 </div>
                 <div
-                  class="review-card__body"
+                  class="review-card__body tile"
                   aria-label="Rating 5 star"
                   title="Rating 5 star"
                 >
@@ -1349,7 +1353,7 @@
                   </div>
                 </div>
                 <div
-                  class="review-card__body"
+                  class="review-card__body tile"
                   aria-label="Rating 5 star"
                   title="Rating 5 star"
                 >
@@ -1388,7 +1392,7 @@
                   </div>
                 </div>
                 <div
-                  class="review-card__body"
+                  class="review-card__body tile"
                   aria-label="Rating 5 star"
                   title="Rating 5 star"
                 >
