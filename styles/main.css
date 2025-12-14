@@ -1769,10 +1769,4 @@ button[aria-label]::before {
   }
 }
 
-.header,
-main > *:not(:last-child),
-.footer {
-  display: none !important;
-}
-
 /*# sourceMappingURL=main.css.map */
