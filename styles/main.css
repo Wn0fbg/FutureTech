@@ -1769,6 +1769,34 @@ button[aria-label]::before {
   }
 }
 
+.hero-alt__header {
+  padding-top: clamp(2.5rem, 0.6869834711rem + 7.4380165289vw, 8.125rem);
+  padding-bottom: clamp(2.5rem, 0.2840909091rem + 9.0909090909vw, 9.375rem);
+}
+.hero-alt__header-inner {
+  display: grid;
+  align-items: center;
+  gap: 1.25rem 5rem;
+}
+@media (width <= 90.06125rem) {
+  .hero-alt__header-inner {
+    column-gap: 3.75rem;
+  }
+}
+@media (width > 47.99875rem) {
+  .hero-alt__header-inner {
+    grid-template-columns: auto 1fr;
+  }
+}
+@media (width <= 47.99875rem) {
+  .hero-alt__header-inner {
+    row-gap: 0.875rem;
+  }
+}
+.hero-alt__title {
+  grid-column: -1/1;
+}
+
 .header,
 main > *:not(:last-child),
 .footer {
