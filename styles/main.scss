@@ -36,6 +36,8 @@
 @use "blocks/news-card";
 @use "blocks/news";
 @use "blocks/hero-alt";
+@use "blocks/video-card";
+@use "blocks/video-player";
 
 .header,
 main > *:not(:last-child),
