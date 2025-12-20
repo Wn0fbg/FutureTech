@@ -1494,40 +1494,10 @@ button[aria-label]::before {
 }
 .bordered-grid--2-cols {
   --columns: 2;
-  --itemPaddingX: 5rem;
-}
-@media (width <= 90.06125rem) {
-  .bordered-grid--2-cols {
-    --itemPaddingX: 3.125rem;
-  }
-}
-@media (width > 47.99875rem) {
-  .bordered-grid--2-cols .bordered-grid__item:nth-child(odd) {
-    padding-right: var(--itemPaddingX);
-    border-right: var(--border);
-  }
-  .bordered-grid--2-cols .bordered-grid__item:nth-child(even) {
-    position: relative;
-  }
-  .bordered-grid--2-cols .bordered-grid__item:nth-child(even)::before {
-    content: "";
-    position: absolute;
-    left: auto;
-    right: 100%;
-    bottom: 0;
-    translate: 50%;
-    width: var(--100vw);
-    height: 0.0625rem;
-    background-color: var(--color-dark-15);
-  }
-  .bordered-grid--2-cols .bordered-grid__item:nth-child(even) {
-    padding-left: var(--itemPaddingX);
-  }
 }
 .bordered-grid--3-cols {
   --columns: 3;
   --itemPaddingX: 3.125rem;
-  column-gap: calc(var(--itemPaddingX) * 2);
 }
 @media (width <= 90.06125rem) {
   .bordered-grid--3-cols {
@@ -1541,16 +1511,8 @@ button[aria-label]::before {
      */
   }
   .bordered-grid--3-cols .bordered-grid__item:nth-child(3n-2), .bordered-grid--3-cols .bordered-grid__item:nth-child(3n-1) {
-    position: relative;
-  }
-  .bordered-grid--3-cols .bordered-grid__item:nth-child(3n-2)::after, .bordered-grid--3-cols .bordered-grid__item:nth-child(3n-1)::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: calc(100% + var(--itemPaddingX));
-    width: 0.0625rem;
-    height: 100%;
-    background-color: var(--color-dark-15);
+    padding-right: var(--itemPaddingX);
+    border-right: var(--border);
   }
   .bordered-grid--3-cols .bordered-grid__item {
     /**
@@ -1561,15 +1523,22 @@ button[aria-label]::before {
     position: relative;
   }
   .bordered-grid--3-cols .bordered-grid__item:nth-child(3n-1)::before {
-    content: "";
     position: absolute;
     left: 50%;
-    right: auto;
-    bottom: 0;
     translate: -50%;
-    width: var(--100vw);
+    content: "";
+    bottom: 0;
+    width: 100vw;
     height: 0.0625rem;
     background-color: var(--color-dark-15);
+  }
+  .bordered-grid--3-cols .bordered-grid__item {
+    /**
+      Элементы во 2-й и 3-й колонке
+     */
+  }
+  .bordered-grid--3-cols .bordered-grid__item:nth-child(3n-1), .bordered-grid--3-cols .bordered-grid__item:nth-child(3n) {
+    padding-left: var(--itemPaddingX);
   }
 }
 @media (width <= 63.99875rem) {
@@ -1577,48 +1546,6 @@ button[aria-label]::before {
     --columns: 1;
   }
   .bordered-grid--3-cols .bordered-grid__item:not(:last-child) {
-    border-bottom: var(--border);
-  }
-}
-.bordered-grid--4-cols {
-  --columns: 4;
-  --itemPaddingX: 3.125rem;
-  column-gap: calc(var(--itemPaddingX) * 2);
-}
-@media (width <= 90.06125rem) {
-  .bordered-grid--4-cols {
-    --itemPaddingX: 1.875rem;
-  }
-}
-@media (width > 63.99875rem) {
-  .bordered-grid--4-cols .bordered-grid__item {
-    /**
-      Элементы в 1-й, 2-й и 3-й колонке
-     */
-  }
-  .bordered-grid--4-cols .bordered-grid__item:nth-child(4n-3), .bordered-grid--4-cols .bordered-grid__item:nth-child(4n-2), .bordered-grid--4-cols .bordered-grid__item:nth-child(4n-1) {
-    position: relative;
-  }
-  .bordered-grid--4-cols .bordered-grid__item:nth-child(4n-3)::after, .bordered-grid--4-cols .bordered-grid__item:nth-child(4n-2)::after, .bordered-grid--4-cols .bordered-grid__item:nth-child(4n-1)::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: calc(100% + var(--itemPaddingX));
-    width: 0.0625rem;
-    height: 100%;
-    background-color: var(--color-dark-15);
-  }
-}
-@media (width <= 63.99875rem) {
-  .bordered-grid--4-cols {
-    --columns: 2;
-  }
-}
-@media (width <= 47.99875rem) {
-  .bordered-grid--2-cols, .bordered-grid--4-cols {
-    --columns: 1;
-  }
-  .bordered-grid--2-cols .bordered-grid__item:not(:last-child), .bordered-grid--4-cols .bordered-grid__item:not(:last-child) {
     border-bottom: var(--border);
   }
 }
@@ -1926,12 +1853,6 @@ button[aria-label]::before {
     clip: rect(0 0 0 0) !important;
     overflow: hidden !important;
   }
-}
-
-.header,
-main > *:not(:last-child),
-.footer {
-  display: none !important;
 }
 
 /*# sourceMappingURL=main.css.map */
