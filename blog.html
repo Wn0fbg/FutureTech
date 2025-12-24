@@ -79,7 +79,10 @@
 
     <main>
       <section class="blog-details" aria-labelledby="blog-details-title">
-        <header class="blog-details__banner">
+        <header
+          class="blog-details__banner"
+          style="--bgImg: url('../../images/blog-details/banner.jpg')"
+        >
           <div class="blog-details__banner-inner container">
             <h1 class="blog-details__title" id="blog-details-title">
               The Rise of Artificial Intelligence in Healthcare
@@ -89,7 +92,9 @@
         <div class="blog-details__body">
           <div class="blog-details__body-inner container">
             <div class="blog-details__content">
-              <div class="blog-details__intro">
+              <div
+                class="blog-details__intro full-vw-line full-vw-line--bottom full-vw-line--left"
+              >
                 <h2 class="h6">Introduction</h2>
                 <p>
                   Artificial Intelligence (AI) has emerged as a transformative
@@ -99,7 +104,10 @@
                   diagnostic accuracy to enhancing patient outcomes.
                 </p>
               </div>
-              <div class="blog-details__main">
+              <div
+                class="blog-details__main expandable-content"
+                data-js-expandable-content
+              >
                 <h2 class="h4">Artificial Intelligence (AI)</h2>
                 <p>
                   Artificial Intelligence (AI) has permeated virtually every
@@ -113,7 +121,6 @@
                   treatment plans, and address the ethical considerations
                   surrounding this revolutionary technology.
                 </p>
-
                 <p>
                   Artificial Intelligence (AI) has permeated virtually every
                   aspect of our lives, and healthcare is no exception. The
@@ -139,7 +146,6 @@
                   in chest X-rays, potentially indicative of life-threatening
                   conditions.
                 </p>
-
                 <p>
                   One of the most prominent applications of AI in healthcare is
                   in diagnostic imaging. AI algorithms have demonstrated
@@ -152,7 +158,6 @@
                   in chest X-rays, potentially indicative of life-threatening
                   conditions.
                 </p>
-
                 <p>
                   One of the most prominent applications of AI in healthcare is
                   in diagnostic imaging. AI algorithms have demonstrated
@@ -165,7 +170,6 @@
                   in chest X-rays, potentially indicative of life-threatening
                   conditions.
                 </p>
-
                 <p>
                   One of the most prominent applications of AI in healthcare is
                   in diagnostic imaging. AI algorithms have demonstrated
@@ -179,15 +183,18 @@
                   conditions.
                 </p>
                 <button
-                  class="blog-details__read-full-button button"
+                  class="blog-details__read-full-button button expandable-content__button"
                   type="button"
+                  data-js-expandable-content-button
                 >
                   <span class="icon icon--gray-arrow-down">Read Full Blog</span>
                 </button>
               </div>
             </div>
             <div class="blog-details__info">
-              <div class="blog-details__actions blog-actions">
+              <div
+                class="blog-details__actions blog-actions full-vw-line full-vw-line--bottom full-vw-line--right"
+              >
                 <ul class="blog-actions__list">
                   <li class="blog-actions__item">
                     <button
@@ -215,7 +222,6 @@
                       <span>24.5k</span>
                     </button>
                   </li>
-
                   <li class="blog-actions__item">
                     <button
                       class="blog-actions__button"
@@ -243,7 +249,6 @@
                       <span>50</span>
                     </button>
                   </li>
-
                   <li class="blog-actions__item">
                     <button
                       class="blog-actions__button"
@@ -273,7 +278,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="blog-details__summary summary">
+              <div class="blog-details__summary summary summary--2-cols">
                 <dl class="summary__list">
                   <div class="summary__item">
                     <dt class="summary__key">Publication Date</dt>
@@ -281,57 +286,45 @@
                       <time datetime="2023-10-15">October 15, 2023</time>
                     </dd>
                   </div>
-
                   <div class="summary__item">
                     <dt class="summary__key">Category</dt>
                     <dd class="summary__value">Healthcare</dd>
                   </div>
-
                   <div class="summary__item">
                     <dt class="summary__key">Reading Time</dt>
                     <dd class="summary__value">10 Min</dd>
                   </div>
-
                   <div class="summary__item">
                     <dt class="summary__key">Author Name</dt>
                     <dd class="summary__value">Dr. Emily Walker</dd>
                   </div>
-
-                  <div class="summary__item">
+                  <div class="summary__item summary__item--wide">
                     <dt class="summary__key">Table of Contents</dt>
                     <dd class="summary__value">
                       <div class="table-of-contents">
                         <ul class="table-of-contents__list">
                           <li class="table-of-contents__item">Introduction</li>
-
                           <li class="table-of-contents__item">
                             AI in Diagnostic Imaging
                           </li>
-
                           <li class="table-of-contents__item">
                             Predictive Analytics and Disease Prevention
                           </li>
-
                           <li class="table-of-contents__item">
                             Personalized Treatment Plans
                           </li>
-
                           <li class="table-of-contents__item">
                             Drug Discovery and Research
                           </li>
-
                           <li class="table-of-contents__item">
                             AI in Telemedicine
                           </li>
-
                           <li class="table-of-contents__item">
                             Ethical Considerations
                           </li>
-
                           <li class="table-of-contents__item">
                             The Future of AI in Healthcare
                           </li>
-
                           <li class="table-of-contents__item">Conclusion</li>
                         </ul>
                       </div>
@@ -432,7 +425,6 @@
                 </div>
               </article>
             </li>
-
             <li class="news__item">
               <article class="news-card">
                 <img
@@ -515,7 +507,6 @@
                 </div>
               </article>
             </li>
-
             <li class="news__item">
               <article class="news-card">
                 <img

@@ -38,4 +38,12 @@
 @use "blocks/hero-alt";
 @use "blocks/video-card";
 @use "blocks/video-player";
+@use "blocks/table-of-contents";
+@use "blocks/expandable-content"; 
+@use "blocks/blog-details";
 
+// .header,
+// main > *:not(:last-child),
+// .footer {
+//   display: none !important;
+// }

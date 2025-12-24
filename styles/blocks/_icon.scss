@@ -31,4 +31,10 @@
       background-image: url("../../assets/icons/eye__yellow.svg");
     }
   }
+
+  &--gray-arrow-down {
+    &::after {
+      background-image: url(/assets/icons/gray-bottom-arrow.svg);
+    }
+  }
 }
