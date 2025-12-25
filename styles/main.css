@@ -2003,9 +2003,9 @@ button[aria-label]::before {
 
 .table-of-contents {
   padding: 1.25rem;
-  border-radius: 0.75rem;
-  background-color: var(--color-dark-10);
   color: var(--color-light);
+  background-color: var(--color-dark-10);
+  border-radius: 0.75rem;
 }
 @media (width <= 90.06125rem) {
   .table-of-contents {
@@ -2032,7 +2032,7 @@ button[aria-label]::before {
   overflow-y: hidden;
 }
 .expandable-content.is-expanded::before,
-.expandable-content.is-expanded .expandable-content {
+.expandable-content.is-expanded .expandable-content__button {
   opacity: 0;
   visibility: hidden;
 }
@@ -2046,7 +2046,7 @@ button[aria-label]::before {
   left: 0;
   width: 100%;
   height: 30%;
-  background-image: linear-gradient(180deg, rgba(20.4, 20.4, 20.4, 0), rgb(20.4, 20.4, 20.4) 77%);
+  background-image: linear-gradient(180deg, rgba(20, 20, 20, 0) 0%, #141414 77.38%);
   pointer-events: none;
   transition-duration: var(--transition-duration);
 }

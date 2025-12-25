@@ -2,9 +2,9 @@
 
 .table-of-contents {
   padding: rem(20);
-  border-radius: rem(12);
-  background-color: var(--color-dark-10);
   color: var(--color-light);
+  background-color: var(--color-dark-10);
+  border-radius: rem(12);
 
   @include laptop {
     border-radius: rem(10);
