@@ -1,4 +1,4 @@
-@use "../helpers" as *;
+@use '../helpers' as *;
 
 .team {
   --personImageSize: #{rem(60)};
@@ -10,7 +10,12 @@
 
   @include laptop {
     --personImageSize: #{rem(50)};
+
     padding: rem(8);
+  }
+
+  @include tablet {
+    --personImageSize: #{rem(40)};
   }
 
   &__person {
@@ -21,10 +26,6 @@
 
     @include laptop {
       border-width: rem(1);
-    }
-
-    @include tablet {
-      --personImageSize: #{rem(40)};
     }
 
     &:not(:first-child) {

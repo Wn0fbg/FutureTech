@@ -1,4 +1,4 @@
-@use "../helpers" as *;
+@use '../helpers' as *;
 
 .about {
   padding-block: fluid(120, 40);
@@ -13,8 +13,8 @@
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-areas:
-      "icon info"
-      "icon description";
+      'icon info'
+      'icon description';
     align-items: center;
     gap: rem(30) fluid(80, 20);
 
@@ -24,9 +24,9 @@
 
     @include mobile {
       grid-template-areas:
-        "icon subtitle"
-        "title title"
-        "description description";
+        'icon subtitle'
+        'title title'
+        'description description';
       row-gap: rem(4);
     }
   }
@@ -78,9 +78,9 @@
     border-radius: rem(12);
 
     @include laptop {
+      gap: rem(10);
       padding: rem(10);
       border-radius: rem(10);
-      gap: rem(10);
     }
 
     @include mobile-above {

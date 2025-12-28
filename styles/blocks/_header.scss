@@ -1,4 +1,4 @@
-@use "../helpers" as *;
+@use '../helpers' as *;
 
 .header {
   position: sticky;
@@ -18,11 +18,23 @@
   &__promo {
     padding-block: rem(20);
     text-align: center;
-    border-bottom: var(--border);
     background-color: var(--color-dark);
+    border-bottom: var(--border);
 
     @include mobile {
       padding-block: rem(14);
+    }
+
+    @include mobile-s {
+      font-size: rem(12);
+    }
+
+    &-link {
+      .icon {
+        @include mobile-s {
+          column-gap: rem(5);
+        }
+      }
     }
   }
 
@@ -60,6 +72,7 @@
 
       &:not(.is-active) {
         @include hide;
+
         translate: 100%;
       }
     }
@@ -95,10 +108,10 @@
 
       &.is-active {
         color: var(--color-light);
+        font-weight: 500;
         background-color: var(--color-dark);
         border: var(--border);
         border-radius: rem(10);
-        font-weight: 500;
         pointer-events: none;
       }
     }

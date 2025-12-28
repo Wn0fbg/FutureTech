@@ -1,4 +1,4 @@
-@use "../helpers" as *;
+@use '../helpers' as *;
 
 .icon {
   display: inline-flex;
@@ -7,9 +7,10 @@
 
   &::after {
     --size: #{rem(24)};
+
     @include square(var(--size));
 
-    content: "";
+    content: '';
     flex-shrink: 0;
     background-position: center;
     background-size: contain;
@@ -22,19 +23,19 @@
 
   &--yellow-arrow {
     &::after {
-      background-image: url("../../assets/icons/arrow-top-right.svg");
+      background-image: url('../../icons/arrow-top-right_yellow.svg');
     }
   }
 
   &--yellow-eye {
     &::after {
-      background-image: url("../../assets/icons/eye__yellow.svg");
+      background-image: url('../../icons/eye_yellow.svg');
     }
   }
 
   &--gray-arrow-down {
     &::after {
-      background-image: url(/assets/icons/gray-bottom-arrow.svg);
+      background-image: url('../../icons/arrow-down_gray.svg');
     }
   }
 }

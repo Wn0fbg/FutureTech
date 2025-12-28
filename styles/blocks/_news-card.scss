@@ -1,4 +1,4 @@
-@use "../helpers" as *;
+@use '../helpers' as *;
 
 .news-card {
   display: grid;
@@ -19,11 +19,11 @@
     }
 
     @include mobile-above {
-      grid-template-columns: 32% auto;
+      grid-template-columns: 32% 1fr;
       grid-template-areas:
-        "image other"
-        "image other"
-        "image other";
+        'image other'
+        'image other'
+        'image other';
     }
 
     .news-card {
@@ -39,7 +39,7 @@
         @include fluid-text(32, 20);
 
         font-family: var(--font-family-base);
-        font-size: 600;
+        font-weight: 600;
       }
     }
   }
@@ -48,7 +48,7 @@
     width: 100%;
     height: rem(222);
     object-fit: cover;
-    border-radius: rem(20);
+    border-radius: rem(12);
 
     @include laptop {
       height: rem(185);

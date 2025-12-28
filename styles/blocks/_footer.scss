@@ -1,7 +1,7 @@
-@use "../helpers" as *;
+@use '../helpers' as *;
 
 .footer {
-//   color: var(--color-dark-40);
+  color: var(--color-dark-40);
 
   &__body {
     padding-block: fluid(80, 40);
@@ -75,7 +75,7 @@
       }
 
       &-item:not(:last-child)::after {
-        content: "|";
+        content: '|';
         margin-inline: rem(11);
       }
     }

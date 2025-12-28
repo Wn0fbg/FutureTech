@@ -1,4 +1,4 @@
-@use "../helpers" as *;
+@use '../helpers' as *;
 
 .person-card {
   --imageSize: #{rem(80)};
@@ -8,19 +8,13 @@
   column-gap: fluid(16, 8);
 
   @include laptop {
-    --imageSize: rem(60);
+    --imageSize: #{rem(60)};
   }
 
   &__image {
     width: var(--imageSize);
-    border-radius: 50%;
     background-color: var(--color-dark-15);
-  }
-
-  &__image-review {
-    width: var(--imageSize);
     border-radius: 50%;
-    background-color: var(--color-light);
   }
 
   &__body {

@@ -1,4 +1,4 @@
-@use "helpers" as *;
+@use 'helpers' as *;
 
 html {
   &.is-lock {
@@ -7,13 +7,12 @@ html {
 }
 
 body {
-  // font-size у тега <P> на desktop и mobile версии
   @include fluid-text(18, 14);
 
   display: flex;
   flex-direction: column;
   font-family: var(--font-family-base);
-  letter-spacing: -3%;
+  letter-spacing: -0.03em;
   color: var(--color-gray-50);
   background-color: var(--color-dark);
 }
@@ -22,80 +21,58 @@ main {
   flex-grow: 1;
 }
 
-h1,
-.h1,
-h2,
-h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
   color: var(--color-light);
 }
 
-h1,
-.h1,
-h2,
-h2,
-h3,
-.h3 {
+h1, .h1,
+h2, .h2,
+h3, .h3 {
   font-family: var(--font-family-accent);
   font-weight: 500;
 }
 
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
+h4, .h4,
+h5, .h5,
+h6, .h6 {
   font-weight: 600;
 }
 
-h1,
-.h1 {
-  // Размеры h1 на desktop и mobile версиях
+h1, .h1 {
   @include fluid-text(70, 30);
+
   line-height: 1.2;
 }
 
-h2,
-.h2 {
-  // Размеры h2 на desktop и mobile версиях
+h2, .h2 {
   @include fluid-text(58, 28);
+
   line-height: 1.3;
 }
 
-h3,
-.h3 {
-  // Размеры h3 на desktop и mobile версиях
+h3, .h3 {
   @include fluid-text(40, 24);
-  line-height: 1.5;
 }
 
-h4,
-.h4 {
-  // Размеры h4 на desktop и mobile версиях
+h4, .h4 {
   @include fluid-text(26, 18);
-  line-height: 1.5;
 }
 
-h5,
-.h5 {
-  // Размеры h5 на desktop и mobile версиях
+h5, .h5 {
   @include fluid-text(24, 18);
-  line-height: 1.5;
 }
 
-h6,
-.h6 {
-  // Размеры h6 на desktop и mobile версиях
-  @include fluid-text(20, 18);
-  line-height: 1.5;
+h6, .h6 {
+  @include fluid-text(20, 16);
+}
+
+p {
+  --paragraphMarginBottom: #{rem(24)};
 }
 
 a,
@@ -109,7 +86,7 @@ svg * {
 }
 
 a {
-  color: #98989a;
+  color: inherit;
 
   @include hover {
     color: var(--color-accent);
@@ -134,7 +111,8 @@ button {
     &::before {
       @include abs-center;
       @include square(rem(44));
-      content: "";
+
+      content: '';
     }
   }
 }

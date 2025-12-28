@@ -1,4 +1,4 @@
-@use "../helpers" as *;
+@use '../helpers' as *;
 
 .expandable-content {
   --initialMaxHeight: #{rem(500)};
@@ -18,7 +18,7 @@
   }
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;

@@ -1,4 +1,5 @@
-@use "functions" as *;
+@use 'sass:math';
+@use 'functions' as *;
 
 @mixin fluid-text($max: 48, $min: 16) {
   font-size: fluid($max, $min);
@@ -17,7 +18,7 @@
 @mixin flex-center($isInline: false) {
   @if $isInline {
     display: inline-flex;
-  } @else {
+  } @else  {
     display: flex;
   }
 
@@ -71,13 +72,13 @@
   position: relative;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     left: $left;
     right: $right;
     #{$property}: 0;
     translate: $translate;
-    width: 100vw;
+    width: var(--100vw);
     height: rem(1);
     background-color: var(--color-dark-15);
   }
